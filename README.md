@@ -21,7 +21,9 @@ docker run -d  -p 5601:5601 -h kibana --name kibana --link elasticsearch:elastic
 
 Step 3: On all remaining instances type the following:
 
-- Step 1: apt-get install filebeat
+- Step 1: 
+          
+          apt-get install filebeat
 
           mv /etc/filebeat/filebeat.yml /etc/filebeat/filebeat.yml.orig
           
@@ -45,5 +47,4 @@ Step 3: On all remaining instances type the following:
           service filebeat start
           
 - Step 5: Start kibana on server, using https://localhost:5600 on server instance and then change the index on kibana to filebeat-*
-
           Goto discover and you can see the logs coming from different clients.
