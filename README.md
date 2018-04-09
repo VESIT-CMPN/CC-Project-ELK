@@ -2,6 +2,7 @@
 Maintain logs using elk service using docker
 
 Step 1: Create 4 linux instances on cloud
+
 Step 2: Select first instance as the elk server instance and install docker in it. Then type the following commands:
 Using 2 different Docker images (official Elastic docker images)
 
